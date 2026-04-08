@@ -23,9 +23,11 @@ The main objective of this assignment is to practice:
 * **CSS3** (External Stylesheet)
 
 ## 📸 Preview
-*(You can add a screenshot of your project here once you host it)*
+![Outlook of Module 2 Project][def]
 
 ---
 **Course:** Full-Stack Web Development with JavaScript (MERN + AI)  
 **Task:** Module 2 Assignment  
 **Status:** Completed ✅
+
+[def]: Module_2Project.png
