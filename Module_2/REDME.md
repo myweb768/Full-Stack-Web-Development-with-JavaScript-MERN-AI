@@ -1,18 +1,31 @@
-মডিউল ২ এর এসাইনমেন্ট
-Welcome to the second assignment of our course. The goal of this assignment is to practice basic CSS styling, including colors, fonts, spacing, layout, and class usage. Use CSS for designing the Html code. Please use external CSS file for this assignment.
+# Personal Profile Web Page - Assignment 02
 
+Welcome to my second assignment of the **Full-Stack Web Development (MERN)** course. This project focuses on mastering basic CSS concepts and applying them to a real-world personal profile page.
 
+## 🎯 Project Goals
+The main objective of this assignment is to practice:
+* **External CSS:** Keeping HTML and CSS separate for cleaner code.
+* **Typography & Colors:** Using custom fonts and color schemes.
+* **Box Model:** Managing padding, margin, and borders.
+* **Layout Design:** Structuring sections like Header, About, and Contact.
+* **CSS Selectors:** Effective use of classes and pseudo-classes.
 
-Assignment Instructions:
+## 🛠️ Features included:
 
-You need to create a Personal Profile Web Page that includes the following sections:
+1.  **Header Section:** Featuring my name with a professional tagline.
+2.  **About Me:** A brief introduction to who I am and my journey.
+3.  **Skills Section:** A list of my core technical skills.
+4.  **Contact Form:** A customized form with name, email, and phone inputs.
+5.  **Custom Buttons:** 5 uniquely styled buttons showcasing various CSS hover effects and designs.
 
-1. Header Section => Add your name as a heading (<h1>), Add a short tagline (e.g., "Web Developer | Learner")
+## 🚀 Technologies Used
+* **HTML5**
+* **CSS3** (External Stylesheet)
 
-2. About Me Section => Write a short paragraph about yourself
+## 📸 Preview
+*(You can add a screenshot of your project here once you host it)*
 
-3. Skills Section => Create a list (<ul>) of at least 5 skills
-
-4. Contact Section => Email, Name, Phone number input fields
-
-5. Create 5 Different styles button using CSS.
+---
+**Course:** Full-Stack Web Development with JavaScript (MERN + AI)  
+**Task:** Module 2 Assignment  
+**Status:** Completed ✅
