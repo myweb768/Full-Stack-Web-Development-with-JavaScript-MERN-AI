@@ -1,0 +1,204 @@
+body{
+        background: linear-gradient(to top, aqua, white);
+    padding:0;
+    margin:0;
+}
+header{
+    height:min-content;
+    padding:.5rem;
+    /* margin:0 0 0 .5rem; */
+    align-items: center;
+}
+
+.headSection{
+    display: flex;
+    align-items:center;
+    padding:.5rem;
+    margin:2rem auto; 
+    padding: 1rem;
+    max-width:70vw;
+}
+
+.Photo{
+    width: 40%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./myPhoto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:30rem;
+    border: 1px solid aqua;
+    border-radius: .5rem;
+    transition: .3s ease-in-out; 
+}
+
+.Photo:hover{
+   background-image: url(./myPhoto1.jpeg);
+   
+}
+
+
+
+.info{
+    padding:.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+
+}
+
+.tagline{
+    color:gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    text-align: center;
+    border-width:50%;
+    border-bottom: 2px solid gray;
+}
+
+.aboutMe{
+    padding:.5rem;
+    font-size:20px;
+    border:1px solid white;
+    margin:1rem 0;
+    border-radius:.3rem;
+}
+
+.card{
+    padding:.5rem;
+    margin:2rem auto; 
+    background-color:aliceblue;
+    padding: 1rem;
+    border-radius: .3rem;
+    max-width:70vw;
+}
+
+
+
+.progress{
+    border-radius: .2rem;
+    padding:.4rem;
+    margin: .4rem 0;
+
+}
+
+ul{
+list-style: none;
+}
+
+li{
+    display: flex;
+    border: solid gray;
+    border-width: 1px 0px 0px 0px ;
+    padding: .2rem;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+
+li:hover{
+    transform: scale(1.1);
+    border: none  ;
+}
+
+.liSyle{
+    width: 6rem;
+    margin: .3rem;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: monospace;
+    color: rgb(31, 30, 30);
+    /* margin-top: 1rem; */
+}
+
+input[type="text"],
+input[type="number"]{
+    padding: .7rem .4rem;
+    margin: 0rem 0rem 1rem 0rem;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: .5rem;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    font-family: cursive;
+}
+
+
+.formBtn{
+    display: flex;
+    justify-content: space-around;
+}
+
+button[type="submit"],
+button[type="reset"]{
+    font-size: 16px;
+    font-weight: 600;
+    margin: .5rem;
+    height: 2.5rem;
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: .4rem;
+    transition: .3s ease-in-out;
+
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(0, 163, 0);
+    color: white;
+}
+
+button[type="reset"]:hover{
+    background-color: rgb(163, 0, 0);
+    color: white;
+}
+
+input[name="hobby"]{
+    font-size:16px;
+    margin:.4rem;
+}
+
+label[for="Gender"],
+label[for="selectInput"],
+label[for="otherHobby"]{
+    display: inline-block;
+    margin-top:1rem;
+}
+
+.socialDivision{
+    display: flex;
+    justify-content: center;
+}
+
+.socialDivision>button{
+   width: 10rem;
+    height: 4rem;
+    font-size: 50px;
+    margin: .5rem;
+    border-radius: .4rem;
+    transition: .3s ease-in-out;
+}
+
+.socialDivision>button:nth-child(1):hover{
+    background-color:rgb(0, 102, 255);
+    color:white;
+        transform: skewX(10deg);
+}
+.socialDivision>button:nth-child(2):hover{
+    background-color: rgb(16, 129, 173);
+    color:white;
+        transform: skewX(10deg);
+
+} 
+.socialDivision>button:nth-child(3):hover{
+background-color: rgb(199, 8, 8);
+color:white;
+    transform: skewX(10deg);
+
+}
