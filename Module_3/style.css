@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border_btn: rgb(244, 209, 13);
+    --bg_btn: aqua;
+    --color_title: wheat;
+    --color_dsp: white;
+    --font_Hand: "Edu NSW ACT Cursive", cursive;
+
+}
+
+.top_Header {
+    font-family: var(--font_Hand);
+    font-weight: 700;
+}
+
+/* .card_Wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+} */
+
+.container_Card {
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    border: var(--border_btn);
+    border-radius: .4rem;
+    box-shadow: 1px 4px 8px var(--border_btn);
+    margin: 1rem;
+    transition: All .3s ease-in-out;
+    max-height: fit-content;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+
+}
+
+.container_Card:hover {
+    max-height: 100%;
+    box-shadow: 0px 0px 15px 3px rgb(72, 247, 72);
+    z-index: 1111;
+}
+
+
+
+.container_Card img {
+    width: 8rem;
+    height: auto;
+    align-self: center;
+}
+
+
+.container_Card span {
+    font-family: var(--font_Hand);
+    margin: 1rem auto;
+    font-weight: 600;
+}
+
+.hoverDetails {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+
+
+.container_Card:hover .hoverDetails {
+    opacity: 1;
+    visibility: visible;
+    height: 200px;
+}
+
+.details-List {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+}
+
+.container_Card button {
+    border: 1px solid var(--border_btn);
+    border-radius: .4rem;
+    margin: .8rem;
+    padding: .5rem 2rem;
+    transition: .3s ease-in-out;
+    font-family: var(--font_Hand);
+    font-weight: 500;
+    background-color: var(--border_btn);
+}
+
+.container_Card button:hover {
+    background-color: rgb(92, 243, 92);
+    scale: calc(1.3);
+}
