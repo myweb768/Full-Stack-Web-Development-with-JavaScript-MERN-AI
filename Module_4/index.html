@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Devloper Refan</title>
+</head>
+
+<body>
+    <header class="md:border-b md:my-2">
+        <nav class="flex items-center justify-between xl:justify-between ">
+            <div class="logo flex items-center justify-center">
+                <img src="./Assets/MERN-Stack-Logo.webp" alt="" class="h-20">
+                <span class="text-2xl font-semibold font-mono">Refan</span>
+            </div>
+            <div
+                class="menu hidden md:block fixed md:static  right-0 top-0 h-full md:h-fit p-4 w-[70%] md:w-[60%]  bg-white ">
+                <ul class="md:flex xl:flex">
+                    <li>Home</li>
+                    <li> About Me</li>
+                    <li>Portfolio</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+                <button
+                    class="z-20 text-5xl text-red-500 fixed bottom-2  p-3  bg-black w-[70%] md:hidden hover:scale-110 hover:text-amber-300 transition-all duration-300 ease-in-out"><i
+                        class="fa-regular fa-circle-xmark"></i></button>
+            </div>
+            <button
+                class="md:hidden mx-3 p-2 hover:bg-green-300  hover:rounded-xl transition-all duration-300 ease-in-out"><i
+                    class="fa-solid fa-bars "></i></button>
+
+        </nav>
+    </header>
+
+    <div class="hero flex flex-col-reverse md:flex-row items-center justify-around">
+        <div class="info p-3 px-5 text-justify m-2 md:w-[50%] ">
+            <h1 class="text-2xl font-semibold ">Omar Faruque Refan</h1>
+            <p>Hi, I'm a passionate Full-Stack Web Developer with 1 year of hands-on experience in the local market. I
+                specialize in building modern, responsive, and user-friendly web applications using the MERN stack
+                (MongoDB, Express.js, React.js, Node.js). <br>
+                I have professional experience developing E-commerce platforms, Portfolio websites, Company Profile
+                sites, and Personal websites — helping businesses and individuals establish a strong online presence
+                that attracts clients and delivers results.</p>
+            <button
+                class="border border-amber-300 rounded-xl bg-amber-300 w-50% px-5 py-2 m-4 hover:scale-x-110 transition-all ease-in-out duration-300 font-semibold">Hire
+                Now</button>
+        </div>
+        <img src="./Assets/myPhoto.jpg" alt="" class="h-auto w-[50vw] mx-auto rounded-2xl md:w-[20rem]">
+    </div>
+    <main>
+
+    </main>
+    <div class="portfolio">
+        <div class="card">
+            <img src="" alt="">
+            <h2></h2>
+            <p></p>
+            <button></button>
+        </div>
+    </div>
+    <footer class="md:flex bg-black">
+        <div class="contact_Me">
+
+        </div>
+        <div class="contact_Form">
+            <form action="">
+                <label for="user_Name">User Name</label> <br>
+                <input type="text" id="user_Name" placeholder="User Name"> <br>
+                <label for="email">Email</label><br>
+                <input type="email" name="" id="email" placeholder="demo123@gmail.com"><br>
+                <label for="phone_Number">Phone Number</label> <br>
+                <input type="number" name="" id="phone_Number" placeholder="01023456789"><br>
+                <label for="message"></label><br>
+                <textarea name="" id="message" placeholder="Your Message..."></textarea>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+        integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
