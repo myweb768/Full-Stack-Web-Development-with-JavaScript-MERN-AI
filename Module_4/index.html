@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -8,165 +8,304 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/png" href="./Assets/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <title>Devloper Refan</title>
 </head>
 
 <body>
     <header class="md:border-b md:my-2">
-        <nav class="flex items-center justify-between xl:justify-between ">
+        <nav class="flex items-center justify-between xl:justify-between z-40">
             <div class="logo flex items-center justify-center">
                 <img src="./Assets/MERN-Stack-Logo.webp" alt="" class="h-20">
                 <span class="text-2xl font-semibold font-mono">Refan</span>
             </div>
-            <div
-                class="menu hidden xl:block fixed md:static  right-0 top-0 h-full md:h-fit p-4 w-[70%] md:w-[60%]  bg-white ">
+            <div class="menu fixed md:static translate-x-full transition-transform  duration-300 ease-in-out md:translate-x-0  right-0 top-0 h-full  p-4 w-[70%]   bg-white "
+                id="menuBar">
                 <ul class="md:flex xl:flex">
-                    <li>Home</li>
-                    <li> About Me</li>
-                    <li>Portfolio</li>
-                    <li>Services</li>
-                    <li>Contact</li>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+
+                    <a href="#About_Me">
+                        <li> About Me</li>
+                    </a>
+
+                    <a href="#portfolio">
+                        <li>Portfolio</li>
+                    </a>
+
+                    <a href="#services">
+                        <li>Services</li>
+                    </a>
+
+                    <a href="#contract">
+                        <li>Contact</li>
+                    </a>
                 </ul>
                 <button
-                    class="z-20 text-5xl text-red-500 fixed bottom-2  p-3  bg-black w-[70%] xl:hidden hover:scale-110 hover:text-amber-300 transition-all duration-300 ease-in-out"><i
-                        class="fa-regular fa-circle-xmark"></i></button>
+                    class="z-20 text-5xl text-red-500 fixed bottom-2  p-3  bg-black w-[70%] md:hidden hover:scale-110 hover:text-amber-300 transition-all duration-300 ease-in-out"
+                    id="closeMenu"><i class="fa-regular fa-circle-xmark"></i></button>
             </div>
             <button
-                class="md:hidden mx-3 p-2 hover:bg-green-300  hover:rounded-xl transition-all duration-300 ease-in-out"><i
-                    class="fa-solid fa-bars "></i></button>
-
+                class="md:hidden mx-2 h-10 w-10 border rounded-[50%] bg-gray-600 text-white hover:bg-amber-300 hover:text-gray-600   hover:scale-105 hover:rounded-xl transition-all duration-300 ease-in-out"
+                id="menuBtn"><i class="fa-solid fa-bars "></i></button>
         </nav>
+
+        <button
+            class=" h-10 w-10 border rounded-[50%] fixed bottom-2 right-2 bg-gray-600 text-white hover:bg-amber-300 hover:text-gray-600 hover:scale-105 transition-all duration-300 ease-in-out z-20"
+            id="HomeScroll"><i class="fa-regular fa-house"></i></button>
     </header>
 
-    <div class="hero flex flex-col-reverse md:flex-row items-center justify-around">
-        <div class="info p-3 px-5 text-justify m-2 md:w-[50%] ">
-            <h1 class="text-2xl font-semibold ">Omar Faruque Refan</h1>
-            <p>Hi, I'm a passionate Full-Stack Web Developer with 1 year of hands-on experience in the local market. I
-                specialize in building modern, responsive, and user-friendly web applications using the MERN stack
-                <br>
-            <h2 class="border-b text-xl font-semibold">Skills:</h2>
-            <ul class="list-none">
-                <li>💻 Frontend → HTML, CSS, JavaScript, React.js, Next.js</li>
-                <li>🎨 UI Framework → Tailwind CSS, Bootstrap</li>
-                <li>⚙️ Backend → Node.js, Express.js</li>
-                <li>🗄️ Database → MongoDB</li>
-                <li>🛠️ Tools → GitHub, WordPress</li>
-                <li>🌐 Expertise → E-commerce, Portfolio, Company Profile, Personal Sites</li>
-            </ul>
-            I have professional experience developing E-commerce platforms, Portfolio websites, Company Profile
-            sites, and Personal websites — helping businesses and individuals establish a strong online presence
-            that attracts clients and delivers results.</p>
-            <button
-                class="border border-amber-300 rounded-xl bg-amber-300 w-50% px-5 py-2 m-4 hover:scale-x-110 transition-all ease-in-out duration-300 font-semibold">Hire
-                Now</button>
-        </div>
-        <img src="./Assets/myPhoto.jpg" alt="" class="h-auto w-[50vw] mx-auto rounded-2xl md:w-[20rem]">
-    </div>
     <main>
+        <!-- Hero Section Code -->
+        <section class="hero mb-20">
+            <div class="home flex m-0 p-0 justify-center items-center md:border-b" id="Home">
+                <div class="glassmorphism p-10 m-10">
+                    <h1 class="text-3xl font-serif ">The World is Searching — Make Sure They Find You</h1>
+                    <p class="text-gray-700 font-normal ">Your website is your best salesman — always online, always
+                        professional, always ready to grow your business.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- About Me Section Code -->
+        <section class="about_Me my-20" id="About_Me">
+            <h1 class="text-center text-3xl font-bold m-4">About Me</h1>
+            <div class="hero flex flex-col-reverse md:flex-row items-center justify-around">
+                <div class="info p-3 px-5 text-justify m-2 md:w-[50%] ">
+                    <h1 class="text-2xl font-semibold ">Omar Faruque Refan</h1>
+                    <p>Hi, I'm a passionate Full-Stack Web Developer with 1 year of hands-on experience in the local
+                        market. I
+                        specialize in building modern, responsive, and user-friendly web applications using the MERN
+                        stack
+                        <br>
+                    <h2 class="border-b text-xl font-semibold">Skills:</h2>
+                    <ul class="list-none">
+                        <li>💻 Frontend → HTML, CSS, JavaScript, React.js, Next.js</li>
+                        <li>🎨 UI Framework → Tailwind CSS, Bootstrap</li>
+                        <li>⚙️ Backend → Node.js, Express.js</li>
+                        <li>🗄️ Database → MongoDB</li>
+                        <li>🛠️ Tools → GitHub, WordPress</li>
+                        <li>🌐 Expertise → E-commerce, Portfolio, Company Profile, Personal Sites</li>
+                    </ul>
+                    I have professional experience developing E-commerce platforms, Portfolio websites, Company Profile
+                    sites, and Personal websites — helping businesses and individuals establish a strong online presence
+                    that attracts clients and delivers results.</p>
+                    <button
+                        class="border border-amber-300 rounded-xl bg-amber-300 w-50% px-5 py-2 m-4 hover:scale-x-110 transition-all ease-in-out duration-300 font-semibold">Hire
+                        Now</button>
+                </div>
+                <img src="./Assets/myPhoto.jpg" alt="" class="h-auto w-[50vw] mx-auto rounded-2xl md:w-[20rem]">
+            </div>
+        </section>
+        <!-- Portfolio Section Code -->
+        <section class="portfolio my-20" id="portfolio">
+            <h1 class="text-center text-3xl font-bold m-4">My Portfolio</h1>
+            <div class="portfolio grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 ">
+                <div
+                    class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
+                    <img src="./Assets/frontedDev.avif" alt="">
+                    <h2 class="text-center font-semibold text-3xl m-2 font-serif">Frontend Project</h2>
+                    <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
+                        culpa velit explicabo ipsum neque!</p>
+                    <button
+                        class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
+                </div>
+                <div
+                    class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
+                    <img src="./Assets/backendDev.png" alt="">
+                    <h2 class="text-center font-semibold text-3xl m-2 font-serif">Backend Project</h2>
+                    <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
+                        culpa velit explicabo ipsum neque!</p>
+                    <button
+                        class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
+                </div>
+                <div
+                    class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
+                    <img src="./Assets/portfolioDev.jpg" alt="">
+                    <h2 class="text-center font-semibold text-3xl m-2 font-serif">Portfoleo Project</h2>
+                    <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
+                        culpa velit explicabo ipsum neque!</p>
+                    <button
+                        class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
+                </div>
+                <div
+                    class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
+                    <img src="./Assets/Ecommarce.webp" alt="">
+                    <h2 class="text-center font-semibold text-3xl m-2 font-serif">Ecommerce Project</h2>
+                    <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
+                        culpa velit explicabo ipsum neque!</p>
+                    <button
+                        class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
+                </div>
+                <div
+                    class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
+                    <img src="./Assets/resturentDev.jpg" alt="">
+                    <h2 class="text-center font-semibold text-3xl m-2 font-serif">Resturent Project</h2>
+                    <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
+                        culpa velit explicabo ipsum neque!</p>
+                    <button
+                        class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
+                </div>
+                <div
+                    class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
+                    <img src="./Assets/DeshboardDev.webp" alt="">
+                    <h2 class="text-center font-semibold text-3xl m-2 font-serif">Deshboard Project</h2>
+                    <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
+                        culpa velit explicabo ipsum neque!</p>
+                    <button
+                        class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section Code -->
+        <section class="services my-20" id="services">
+            <h1 class="text-center text-3xl font-bold m-4">Services</h1>
+            <div class="portfolio grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 m-4 gap-4">
+                <div
+                    class="service_Card neu_Card flex flex-col items-center justify-center border border-[lightgray] rounded-xl p-3 hover:scale-110 hover:shadow">
+                    <div class="service_Icon"><i class="fa-solid fa-code"></i></div>
+                    <h2 class="text-2xl font-serif">Web Development</h2>
+                    <ul class="m-4 list-decimal font-semibold">
+                        <li>Custom Website Development</li>
+                        <li>Responsive Web Design</li>
+                        <li>Single Page Application (SPA)</li>
+                    </ul>
+                </div>
+                <div
+                    class="service_Card neu_Card flex flex-col items-center justify-center border border-[lightgray] rounded-xl p-3 hover:scale-110 hover:shadow">
+                    <div class="service_Icon"><i class="fa-solid fa-store"></i></div>
+                    <h2 class="text-2xl font-serif">E-commerce</h2>
+                    <ul class="m-4 list-decimal font-semibold">
+                        <li>Full E-commerce Website</li>
+                        <li>Payment Gateway Integration (SSLCommerz, Stripe)</li>
+                        <li>Product & Order Management System</li>
+                    </ul>
+                </div>
+                <div
+                    class="service_Card neu_Card flex flex-col items-center justify-center border border-[lightgray] rounded-xl p-3 hover:scale-110 hover:shadow">
+                    <div class="service_Icon"><i class="fa-regular fa-building"></i></div>
+                    <h2 class="text-2xl font-serif"> Business Solutions</h2>
+                    <ul class="m-4 list-decimal font-semibold">
+                        <li>Company Profile Website</li>
+                        <li>Business Landing Page</li>
+                        <li>Admin Dashboard & Panel</li>
+                    </ul>
+                </div>
+                <div
+                    class="service_Card neu_Card flex flex-col items-center justify-center border border-[lightgray] rounded-xl p-3 hover:scale-110 hover:shadow">
+                    <div class="service_Icon"><i class="fa-solid fa-palette"></i></div>
+                    <h2 class="text-2xl font-serif">UI/UX & Design</h2>
+                    <ul class="m-4 list-decimal font-semibold">
+                        <li>Modern Animated Website</li>
+                        <li>Glassmorphism / Premium UI Design</li>
+                        <li>Figma to Website Convert</li>
+                    </ul>
+                </div>
+                <div
+                    class="service_Card neu_Card flex flex-col items-center justify-center border border-[lightgray] rounded-xl p-3 hover:scale-110 hover:shadow">
+                    <div class="service_Icon"><i class="fa-solid fa-toolbox"></i></div>
+                    <h2 class="text-2xl font-serif">Full-Stack Development</h2>
+                    <ul class="m-4 list-decimal font-semibold">
+                        <li>MERN Stack Web Application</li>
+                        <li>REST API Development</li>
+                        <li>Database Design (MongoDB)</li>
+                    </ul>
+                </div>
+                <div
+                    class="service_Card neu_Card flex flex-col items-center justify-center border border-[lightgray] rounded-xl p-3 hover:scale-110 hover:shadow">
+                    <div class="service_Icon"><i class="fa-solid fa-robot"></i></div>
+                    <h2 class="text-2xl font-serif"> AI Integration</h2>
+                    <ul class="m-4 list-decimal font-semibold">
+                        <li>AI Chatbot Integration</li>
+                        <li>Smart Search & Recommendation</li>
+                        <li>Automation System</li>
+                    </ul>
+                </div>
+                <div
+                    class="service_Card neu_Card flex flex-col items-center justify-center border border-[lightgray] rounded-xl p-3 hover:scale-110 hover:shadow">
+                    <div class="service_Icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h2 class="text-2xl font-serif">Maintenance & Support</h2>
+                    <ul class="m-4 list-decimal font-semibold">
+                        <li>Website Maintenance</li>
+                        <li>Bug Fixing & Optimization</li>
+                        <li>Website Speed Optimization</li>
+                    </ul>
+                </div>
+                <div
+                    class="service_Card neu_Card flex flex-col items-center justify-center border border-[lightgray] rounded-xl p-3 hover:scale-110 hover:shadow">
+                    <div class="service_Icon"><i class="fa-solid fa-code"></i></div>
+                    <h2 class="text-2xl font-serif"> CMS</h2>
+                    <ul class="m-4 list-decimal font-semibold">
+                        <li>WordPress Website</li>
+                        <li>WordPress Customization</li>
+                        <li>WordPress Maintenance</li>
+                    </ul>
+                </div>
+                <div
+                    class="service_Card neu_Card flex flex-col items-center justify-center border border-[lightgray] rounded-xl p-3 hover:scale-110 hover:shadow">
+                    <div class="service_Icon"><i class="fa-solid fa-server"></i></div>
+                    <h2 class="text-2xl font-serif"> Server Site</h2>
+                    <ul class="m-4 list-decimal font-semibold">
+                        <li>Domain & Hosting Setup</li>
+                        <li>cPnal Customization</li>
+                        <li>Server Maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section Code -->
+        <footer class=" bg-black p-4 mt-10" id="contract">
+            <h2 class="text-center text-white text-4xl ">Contact Me</h2>
+            <div class="Footer_Content  md:flex md:justify-around ">
+                <div class="contact_Me p-4 lin">
+                    <ul class="list-none text-2xl text-[lightgray] leading-12">
+                        <li><i class="fa-solid fa-at"></i>myweb768@gmail.com</li>
+                        <li><i class="fa-solid fa-globe"></i>www.devloperrefan.me</li>
+                        <li><i class="fa-solid fa-phone"></i>01840322932</li>
+                        <li><i class="fa-brands fa-linkedin"></i>omar-faruque-7d3</li>
+                        <li><i class="fa-brands fa-facebook"></i>Omar Faruque chaudhury Refan</li>
+                        <li><i class="fa-brands fa-square-instagram"></i>refan7d3</li>
+                        <li><i class="fa-brands fa-square-github"></i>myweb768</li>
+                    </ul>
+
+                </div>
+                <div class="contact_Form justify-center">
+                    <form action="">
+                        <label for="user_Name">User Name</label> <br>
+                        <div><input type="text" id="user_Name" placeholder="User Name"> <i class="fa-solid fa-user"></i>
+                        </div>
+                        <label for="email">Email</label>
+                        <div><input type="email" name="" id="email" placeholder="demo123@gmail.com"><i
+                                class="fa-solid fa-at"></i></div>
+                        <label for="phone_Number">Phone Number</label> <br>
+                        <div> <input type="number" name="" id="phone_Number" placeholder="01023456789"><i
+                                class="fa-solid fa-phone-flip"></i> </div>
+                        <label for="message">Write your Message:</label><br>
+                        <textarea name="" id="message" placeholder="Your Message..."
+                            class=" w-full rounded-xl bg-white border border-blue-300 p-3 "></textarea>
+                        <div class="formBtn flex justify-between">
+                            <button type="submit"
+                                class="bg-white hover:bg-green-400 hover:scale-110 transition-all duration-300 ease-in-out ">Submit</button>
+                            <button type="reset"
+                                class="bg-white hover:bg-red-400 hover:scale-110 transition-all duration-300 ease-in-out ">Clear</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
 
     </main>
-    <div class="portfolio grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 ">
-        <div
-            class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
-            <img src="./Assets/frontedDev.avif" alt="">
-            <h2 class="text-center font-semibold text-3xl m-2 font-serif">Frontend Project</h2>
-            <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
-                culpa velit explicabo ipsum neque!</p>
-            <button
-                class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
-        </div>
-        <div
-            class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
-            <img src="./Assets/backendDev.png" alt="">
-            <h2 class="text-center font-semibold text-3xl m-2 font-serif">Backend Project</h2>
-            <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
-                culpa velit explicabo ipsum neque!</p>
-            <button
-                class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
-        </div>
-        <div
-            class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
-            <img src="./Assets/portfolioDev.jpg" alt="">
-            <h2 class="text-center font-semibold text-3xl m-2 font-serif">Portfoleo Project</h2>
-            <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
-                culpa velit explicabo ipsum neque!</p>
-            <button
-                class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
-        </div>
-        <div
-            class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
-            <img src="./Assets/Ecommarce.webp" alt="">
-            <h2 class="text-center font-semibold text-3xl m-2 font-serif">Ecommerce Project</h2>
-            <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
-                culpa velit explicabo ipsum neque!</p>
-            <button
-                class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
-        </div>
-        <div
-            class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
-            <img src="./Assets/resturentDev.jpg" alt="">
-            <h2 class="text-center font-semibold text-3xl m-2 font-serif">Resturent Project</h2>
-            <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
-                culpa velit explicabo ipsum neque!</p>
-            <button
-                class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
-        </div>
-        <div
-            class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
-            <img src="./Assets/DeshboardDev.webp" alt="">
-            <h2 class="text-center font-semibold text-3xl m-2 font-serif">Deshboard Project</h2>
-            <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
-                culpa velit explicabo ipsum neque!</p>
-            <button
-                class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
-        </div>
-    </div>
-
-    <footer class=" bg-black p-4">
-        <h2 class="text-center text-white text-4xl ">Contact Me</h2>
-        <div class="Footer_Content  md:flex md:justify-around ">
-            <div class="contact_Me p-4 lin">
-                <ul class="list-none text-2xl text-[lightgray] leading-12">
-                    <li><i class="fa-solid fa-at"></i>myweb768@gmail.com</li>
-                    <li><i class="fa-solid fa-globe"></i>www.devloperrefan.me</li>
-                    <li><i class="fa-solid fa-phone"></i>01840322932</li>
-                    <li><i class="fa-brands fa-linkedin"></i>omar-faruque-7d3</li>
-                    <li><i class="fa-brands fa-facebook"></i>Omar Faruque chaudhury Refan</li>
-                    <li><i class="fa-brands fa-square-instagram"></i>refan7d3</li>
-                </ul>
-
-            </div>
-            <div class="contact_Form justify-center">
-                <form action="">
-                    <label for="user_Name">User Name</label> <br>
-                    <div><input type="text" id="user_Name" placeholder="User Name"> <i class="fa-solid fa-user"></i>
-                    </div>
-                    <label for="email">Email</label>
-                    <div><input type="email" name="" id="email" placeholder="demo123@gmail.com"><i
-                            class="fa-solid fa-at"></i></div>
-                    <label for="phone_Number">Phone Number</label> <br>
-                    <div> <input type="number" name="" id="phone_Number" placeholder="01023456789"><i
-                            class="fa-solid fa-phone-flip"></i> </div>
-                    <label for="message">Write your Message:</label><br>
-                    <textarea name="" id="message" placeholder="Your Message..."
-                        class=" w-full rounded-xl bg-white border border-blue-300 p-3 "></textarea>
-                    <div class="formBtn flex justify-between">
-                        <button type="submit"
-                            class="bg-white hover:bg-green-400 hover:scale-110 transition-all duration-300 ease-in-out ">Submit</button>
-                        <button type="reset"
-                            class="bg-white hover:bg-red-400 hover:scale-110 transition-all duration-300 ease-in-out ">Clear</button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
     </footer>
 
 

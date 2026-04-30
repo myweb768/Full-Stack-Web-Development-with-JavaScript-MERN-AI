@@ -1,20 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Playwrite+NO:wght@100..400&display=swap');
 
 
-.menu ul li {
+.home {
+    background-image: url(./Assets/MERN_Dev.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.187);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    z-index: 1111;
+}
+
+.menu {
+    z-index: 2222;
+}
+
+.menu ul a {
     cursor: pointer;
-    padding: 1rem;
-    margin: .3rem;
     width: 100%;
     font-weight: 600;
     text-align: center;
-    border: 1px solid black;
-    border-radius: .4rem;
     background: transparent;
+}
+
+.menu ul a li {
+    border-radius: .4rem;
+    padding: 1rem;
+    margin: .3rem;
+    border: 1px solid black;
     transition: all .3s ease-in-out;
 }
 
-.menu ul li:hover {
+.menu ul a li:hover {
     background-color: black;
     color: white;
     transform: scale(1.1);
@@ -71,4 +97,32 @@ form div button {
     border: 1px solid gray;
     border-radius: .4rem;
 
+}
+
+.neu_Card {
+    transition: all .3s ease-in-out;
+}
+
+.service_Icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    padding: .5rem;
+    margin: .5rem;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.neu_Card:hover {
+
+    background: #e0e5ec;
+    box-shadow: -15px -15px 30px #feffff,
+        15px 15px 30px #c2c7ce;
+}
+
+
+.Footer_Content {
+    font-family: Playwrite NO, cursive;
 }
