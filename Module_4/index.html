@@ -20,7 +20,7 @@
                 <span class="text-2xl font-semibold font-mono">Refan</span>
             </div>
             <div
-                class="menu hidden md:block fixed md:static  right-0 top-0 h-full md:h-fit p-4 w-[70%] md:w-[60%]  bg-white ">
+                class="menu hidden xl:block fixed md:static  right-0 top-0 h-full md:h-fit p-4 w-[70%] md:w-[60%]  bg-white ">
                 <ul class="md:flex xl:flex">
                     <li>Home</li>
                     <li> About Me</li>
@@ -29,7 +29,7 @@
                     <li>Contact</li>
                 </ul>
                 <button
-                    class="z-20 text-5xl text-red-500 fixed bottom-2  p-3  bg-black w-[70%] md:hidden hover:scale-110 hover:text-amber-300 transition-all duration-300 ease-in-out"><i
+                    class="z-20 text-5xl text-red-500 fixed bottom-2  p-3  bg-black w-[70%] xl:hidden hover:scale-110 hover:text-amber-300 transition-all duration-300 ease-in-out"><i
                         class="fa-regular fa-circle-xmark"></i></button>
             </div>
             <button
@@ -44,10 +44,19 @@
             <h1 class="text-2xl font-semibold ">Omar Faruque Refan</h1>
             <p>Hi, I'm a passionate Full-Stack Web Developer with 1 year of hands-on experience in the local market. I
                 specialize in building modern, responsive, and user-friendly web applications using the MERN stack
-                (MongoDB, Express.js, React.js, Node.js). <br>
-                I have professional experience developing E-commerce platforms, Portfolio websites, Company Profile
-                sites, and Personal websites — helping businesses and individuals establish a strong online presence
-                that attracts clients and delivers results.</p>
+                <br>
+            <h2 class="border-b text-xl font-semibold">Skills:</h2>
+            <ul class="list-none">
+                <li>💻 Frontend → HTML, CSS, JavaScript, React.js, Next.js</li>
+                <li>🎨 UI Framework → Tailwind CSS, Bootstrap</li>
+                <li>⚙️ Backend → Node.js, Express.js</li>
+                <li>🗄️ Database → MongoDB</li>
+                <li>🛠️ Tools → GitHub, WordPress</li>
+                <li>🌐 Expertise → E-commerce, Portfolio, Company Profile, Personal Sites</li>
+            </ul>
+            I have professional experience developing E-commerce platforms, Portfolio websites, Company Profile
+            sites, and Personal websites — helping businesses and individuals establish a strong online presence
+            that attracts clients and delivers results.</p>
             <button
                 class="border border-amber-300 rounded-xl bg-amber-300 w-50% px-5 py-2 m-4 hover:scale-x-110 transition-all ease-in-out duration-300 font-semibold">Hire
                 Now</button>
@@ -57,31 +66,106 @@
     <main>
 
     </main>
-    <div class="portfolio">
-        <div class="card">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-            <button></button>
+    <div class="portfolio grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 ">
+        <div
+            class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
+            <img src="./Assets/frontedDev.avif" alt="">
+            <h2 class="text-center font-semibold text-3xl m-2 font-serif">Frontend Project</h2>
+            <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
+                culpa velit explicabo ipsum neque!</p>
+            <button
+                class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
+        </div>
+        <div
+            class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
+            <img src="./Assets/backendDev.png" alt="">
+            <h2 class="text-center font-semibold text-3xl m-2 font-serif">Backend Project</h2>
+            <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
+                culpa velit explicabo ipsum neque!</p>
+            <button
+                class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
+        </div>
+        <div
+            class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
+            <img src="./Assets/portfolioDev.jpg" alt="">
+            <h2 class="text-center font-semibold text-3xl m-2 font-serif">Portfoleo Project</h2>
+            <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
+                culpa velit explicabo ipsum neque!</p>
+            <button
+                class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
+        </div>
+        <div
+            class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
+            <img src="./Assets/Ecommarce.webp" alt="">
+            <h2 class="text-center font-semibold text-3xl m-2 font-serif">Ecommerce Project</h2>
+            <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
+                culpa velit explicabo ipsum neque!</p>
+            <button
+                class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
+        </div>
+        <div
+            class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
+            <img src="./Assets/resturentDev.jpg" alt="">
+            <h2 class="text-center font-semibold text-3xl m-2 font-serif">Resturent Project</h2>
+            <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
+                culpa velit explicabo ipsum neque!</p>
+            <button
+                class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
+        </div>
+        <div
+            class="card p-3 m-3 border rounded-xl flex flex-col shadow-taupe-900 items-center justify-center hover:-translate-y-4 transition-all duration-300 ease-in-out">
+            <img src="./Assets/DeshboardDev.webp" alt="">
+            <h2 class="text-center font-semibold text-3xl m-2 font-serif">Deshboard Project</h2>
+            <p class="text-justify w-[80%]  ">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Doloremque voluptate enim quo aliquam, eos id
+                culpa velit explicabo ipsum neque!</p>
+            <button
+                class="w-full p-4 m-3 bg-white border border-[lightgray] rounded-xl font-semibold  hover:bg-amber-300 hover:scale-110 transition-all duration-300 ease-in-out">View</button>
         </div>
     </div>
-    <footer class="md:flex bg-black">
-        <div class="contact_Me">
 
-        </div>
-        <div class="contact_Form">
-            <form action="">
-                <label for="user_Name">User Name</label> <br>
-                <input type="text" id="user_Name" placeholder="User Name"> <br>
-                <label for="email">Email</label><br>
-                <input type="email" name="" id="email" placeholder="demo123@gmail.com"><br>
-                <label for="phone_Number">Phone Number</label> <br>
-                <input type="number" name="" id="phone_Number" placeholder="01023456789"><br>
-                <label for="message"></label><br>
-                <textarea name="" id="message" placeholder="Your Message..."></textarea>
-                <button type="submit">Submit</button>
-                <button type="reset">Clear</button>
-            </form>
+    <footer class=" bg-black p-4">
+        <h2 class="text-center text-white text-4xl ">Contact Me</h2>
+        <div class="Footer_Content  md:flex md:justify-around ">
+            <div class="contact_Me p-4 lin">
+                <ul class="list-none text-2xl text-[lightgray] leading-12">
+                    <li><i class="fa-solid fa-at"></i>myweb768@gmail.com</li>
+                    <li><i class="fa-solid fa-globe"></i>www.devloperrefan.me</li>
+                    <li><i class="fa-solid fa-phone"></i>01840322932</li>
+                    <li><i class="fa-brands fa-linkedin"></i>omar-faruque-7d3</li>
+                    <li><i class="fa-brands fa-facebook"></i>Omar Faruque chaudhury Refan</li>
+                    <li><i class="fa-brands fa-square-instagram"></i>refan7d3</li>
+                </ul>
+
+            </div>
+            <div class="contact_Form justify-center">
+                <form action="">
+                    <label for="user_Name">User Name</label> <br>
+                    <div><input type="text" id="user_Name" placeholder="User Name"> <i class="fa-solid fa-user"></i>
+                    </div>
+                    <label for="email">Email</label>
+                    <div><input type="email" name="" id="email" placeholder="demo123@gmail.com"><i
+                            class="fa-solid fa-at"></i></div>
+                    <label for="phone_Number">Phone Number</label> <br>
+                    <div> <input type="number" name="" id="phone_Number" placeholder="01023456789"><i
+                            class="fa-solid fa-phone-flip"></i> </div>
+                    <label for="message">Write your Message:</label><br>
+                    <textarea name="" id="message" placeholder="Your Message..."
+                        class=" w-full rounded-xl bg-white border border-blue-300 p-3 "></textarea>
+                    <div class="formBtn flex justify-between">
+                        <button type="submit"
+                            class="bg-white hover:bg-green-400 hover:scale-110 transition-all duration-300 ease-in-out ">Submit</button>
+                        <button type="reset"
+                            class="bg-white hover:bg-red-400 hover:scale-110 transition-all duration-300 ease-in-out ">Clear</button>
+                    </div>
+
+                </form>
+            </div>
         </div>
     </footer>
 
