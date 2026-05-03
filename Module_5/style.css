@@ -1,10 +1,16 @@
+menu ul {
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+
+}
+
 menu ul li {
-    display: flex;
     margin: .4rem;
     padding: .4rem;
-    text-align: center;
-    font-weight: 500;
+    width: 100%;
     transition: all .3s ease-in-out;
+
 }
 
 memu ul li a {
@@ -14,4 +20,54 @@ memu ul li a {
 menu ul li:hover {
     background: white;
     transform: scale(1.1);
+}
+
+.items_Img img {
+    height: 2.5rem;
+    width: auto;
+}
+
+.expDiv div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    border: 1px solid rgba(189, 188, 188, 0.579);
+    border-radius: .3rem;
+    margin: 1rem 0rem;
+    transition: all .3s ease-in-out;
+}
+
+.expDiv div:hover {
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1rem);
+}
+
+.expDiv div h2 {
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+    margin: .3rem;
+}
+
+.expDiv div p {
+    text-align: justify;
+
+}
+
+.readyContent ul li {
+    /* font-size: 1.3rem; */
+    padding: .5rem;
+    width: fit-content;
+    border: 1px solid rgba(163, 162, 162, 0.579);
+    font-weight: 500;
+    color: gray;
+    border-radius: .7rem;
+    margin: .3rem;
+}
+
+.readyContent ul li i {
+    font-size: 1.5rem;
+    pad: .3rem;
 }

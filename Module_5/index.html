@@ -15,48 +15,74 @@
 <body>
     <header>
         <nav class="grid grid-cols-3 gap-4 items-center justify-around p-4 my-4">
-            <div class="brading flex items-center justify-center gap-3">
+            <div class="brading flex items-center justify-center gap-3 w-[50%] md:w-auto">
                 <img src="./Assets/Logo.png" alt="">
                 <span class="font-bold">Medi Bridge</span>
             </div>
-            <menu class="">
+            <!-- <menu
+                class="fixed md:static translate-x-full  md:translate-x-0 transition-transform duration-300 ease-in-out w-[60%]">
                 <ul
-                    class=" md:flex list-none items-center justify-around fixed md:static right-0 top-o h-screen md:h-auto md:w-auto z-50 bg-gray-400 md:bg-white w-[60%] ">
+                    class="  list-none items-center justify-around   right-0 top-0 h-screen md:h-auto md:w-auto z-50 bg-gray-400 md:bg-transparent w-[60%]  flex  flex-col md:flex-row">
                     <li><a href="">About Us</a></li>
                     <li class="flex justify-center items-center">Features<i class="fa-solid fa-angle-down"></i></li>
 
                     <li><a href="">Find Doctors</a></li>
                     <li><a href="">Blog</a></li>
                 </ul>
+            </menu> -->
+
+            <!-- মেনু কন্টেইনার -->
+            <menu class="fixed md:static top-0 right-0 h-screen md:h-auto w-[70%] md:w-auto 
+             bg-gray-400 md:bg-transparent z-50 
+             transform translate-x-full md:translate-x-0 
+             transition-transform duration-300 ease-in-out">
+
+                <ul
+                    class="flex flex-col md:flex-row list-none items-center justify-around h-full md:h-auto gap-8 md:gap-4">
+                    <button class="hidden"><i class="fa-solid fa-angle-right" id="menu_Close"></i></button>
+                    <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+                    <li class="flex justify-center items-center cursor-pointer gap-1">
+                        Features <i class="fa-solid fa-angle-down text-xs"></i>
+                    </li>
+                    <li><a href="#" class="hover:text-blue-600">Find Doctors</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Blog</a></li>
+                </ul>
             </menu>
-            <div class="login flex items-center justify-center">
-                <button class="mx-2 px-5 py-2 bg-gray-200 border-gray-400 rounded-xl">Log In</button>
+            <div class="login flex items-center justify-center w-[50%] md:w-auto">
+                <button class="mx-2 px-5 py-2 bg-gray-200 border-gray-400 rounded-xl ">Log In</button>
                 <button class="mx-2 px-5 py-2 bg-green-800 border-green-800 rounded-xl text-white">Register</button>
             </div>
-            <button class="hidden"></button>
+
+            <button class="md:hidden w-10" id="menu_Open"><i class="fa-solid fa-angle-left"></i></button>
         </nav>
     </header>
     <main>
 
         <!-- Hero Section Code -->
-        <div class="hero flex">
-            <div class="content ">
+        <div class="hero md:flex ">
+            <div class="content p-4 m-2 md:w-[50%]">
                 <div
-                    class="snapBar flex items-center justify-center gap-2 bg-[rgba(138,195,188,0.15)] border-green-400 rounded-2xl py-4 px-2 m-4 w-50% text-green-800">
-                    <i
-                        class="fa-solid fa-award p-2 rounded-full bg-[rgba(138,195,188,0.40)] text-[rgba(138,195,188)]"></i>
+                    class="snapBar flex items-center justify-center gap-2 bg-[rgba(138,195,188,0.15)] border-green-400 rounded-3xl py-2 px-2 m-4 font-semibold text-[.8rem] text-green-900 md:w-[40%]">
+                    <i class="fa-solid fa-award p-2 rounded-full bg-[rgba(138,195,188,0.40)] text-green-900"></i>
                     <span>Top-rated healthcare service</span>
                 </div>
-                <h1>Transforming Healthcare for a Better Tomorrow</h1>
-                <p>With a focus on innovation, compassion, and personalized
+                <h1 class="text-5xl font-semibold text-black">Transforming <br> Healthcare for a <br> Better Tomorrow
+                </h1>
+                <p class="text-gray-600 text-2xl">With a focus on innovation, compassion, and personalized
                     care, we are committed to guiding you towards a healthier and
                     more vibrant tomorrow.</p>
-                <button>Get Started</button>
-                <button>Learn More</button>
+                <button
+                    class="p-3 m-2 bg-green-800 border-green-900 rounded-xl hover:scale-110 transition-all duration-300 ease-in-out text-white font-semibold">Get
+                    Started</button>
+                <button
+                    class="p-3 m-2 bg-transparent border border-gray-400 rounded-xl hover:scale-110 transition-all duration-300 ease-in-out font-semibold">Learn
+                    More</button>
             </div>
-            <div class="media">
+            <div class="media relative md:w-[50%] md:h-[70vh] m-4 flex flex-col items-center justify-center">
                 <div class="bgDoc">
-                    <div class="sidDiv">
+                    <img src="./Assets/womanDoc.png" alt="" class="self-center justify-center-safe">
+                    <div
+                        class=" grid grid-cols-3 items-center justify-center sidDiv absolute left-0 top-40 z-20  p-3 bg-white rounded-xl w-full  md:w-[70%]">
                         <img src="./Assets/Avatar.png" alt="">
                         <div class="miniContent">
                             <button>Available</button>
@@ -64,16 +90,19 @@
                             <span>Cardiologist</span>
                             <span><span>$55</span> / session</span>
                         </div>
+                        <button
+                            class="flex items-center justify-center text-green-700 font-semibold border border-green-600 bg-transparent p-2 m-2 rounded-2xl h-9"><i
+                                class="fa-solid fa-phone"></i> Book Now</button>
                     </div>
-                    <div class="bottomDiv">
-                        <div class="textDiv">
+                    <div class="bottomDiv absolute bottom-0 right-0 md:w-[50%] bg-green-700 rounded-xl p-4 text-white">
+                        <div class="textDiv font-semibold">
                             <p>“The workshops were insightful, the networking opportunities were abundant”</p>
-                            <div class="spalteDiv">
-                                <div class="intro">
+                            <div class="spalteDiv flex justify-between">
+                                <div class="intro ">
                                     <h2>Michael Angelo</h2>
-                                    <span>39 years old</span>
+                                    <span class="font-normal">39 years old</span>
                                 </div>
-                                <i class="fa-solid fa-quote-right"></i>
+                                <i class="fa-solid fa-quote-right text-6xl text-white/40"></i>
                             </div>
                         </div>
                     </div>
@@ -82,9 +111,9 @@
         </div>
 
         <!-- Trusted Section Code -->
-        <div class="trusted">
-            <h2>Trusted by</h2>
-            <div class="item flex">
+        <div class="trusted p-6 my-14">
+            <h2 class="text-gray-300 font-normal text-center text-2xl">Trusted by</h2>
+            <div class="items_Img flex items-center justify-center gap-4">
                 <img src="./Assets/Logo1.png" alt="">
                 <img src="./Assets/Logo2.png" alt="">
                 <img src="./Assets/Logo3.png" alt="">
@@ -94,11 +123,12 @@
         </div>
 
         <!-- Exprence Section Code -->
-        <div class="exprence">
-            <h1>Experience the Difference
+        <div class="exprence my-16 p-4">
+            <h1 class="text-center p-5 m-2 font-bold text-[1.5rem]">Experience the Difference <br>
                 in Our Healthcare Approach</h1>
-            <p>Transform your healthcare journey with our innovative and personalized approach</p>
-            <div class="expDiv flex flex-wrap">
+            <p class="text-center text-gray-500 m-2">Transform your healthcare journey with our innovative and
+                personalized approach</p>
+            <div class="expDiv  md:grid md:grid-cols-4 gap-5 p-2 m-2 ">
                 <div>
                     <img src="./Assets/Icon1.png" alt="">
                     <h2>Expert Care</h2>
@@ -125,51 +155,107 @@
         </div>
 
         <!-- Ready Section Code -->
-        <div class="ready">
-            <div class="readyDiv">
-                <div class="snapBar">
-                    <i class="fa-regular fa-clock"></i>
+        <div class="ready md:grid grid-cols-2 gap-2">
+            <div class="readyDiv relative p-9 ">
+                <div
+                    class="snapBar absolute top-8 left-8 gap-2 bg-[rgba(138,195,188,0.15)] border-green-400 rounded-3xl py-2 px-2 m-4 font-semibold text-[.8rem] text-green-900 ">
+                    <i class="fa-regular fa-clock font-bold"></i>
                     <span>Always Ready for You</span>
                 </div>
-                <img src="./Assets/readyDoc.jpg" alt="">
+                <img src="./Assets/readyDoc.jpg" alt="" class="rounded-2xl  object-cover h-[98vh] w-full">
             </div>
-            <div class="readyContent">
-                <h1>Unveiling a Spectrum
+            <div class="readyContent p-9">
+                <h1 class="text-3xl font-semibold">Unveiling a Spectrum
                     of Specialized Offerings</h1>
-                <p>Discover a tailored approach to your health with our versatile range of specialized services,
+                <p class="text-gray-500 py-5">Discover a tailored approach to your health with our versatile range of
+                    specialized services,
                     ensuring every aspect of your healthcare journey is seamlessly addressed.</p>
-                <ul>
-                    <li><i class="fa-solid fa-circle-check"></i> Diagnostic Imaging</li>
-                    <li><i class="fa-solid fa-circle-check"></i>Mental Health Services</li>
-                    <li><i class="fa-solid fa-circle-check"></i>Laboratory Services</li>
-                    <li><i class="fa-solid fa-circle-check"></i>Rehabilitation Services</li>
-                    <li><i class="fa-solid fa-circle-check"></i>Home Healthcare</li>
-                    <li><i class="fa-solid fa-circle-check"></i>Geriatric Care</li>
+                <ul class="md:grid md:grid-cols-2 gap-4">
+                    <li><i class="fa-solid fa-circle-check" style="color: rgb(99, 230, 190);  font-size: 1.3rem;"></i>
+                        Diagnostic Imaging
+                    </li>
+                    <li><i class="fa-solid fa-circle-check"
+                            style="color: rgb(99, 230, 190); font-size: 1.3rem;"></i>Mental Health Services
+                    </li>
+                    <li><i class="fa-solid fa-circle-check"
+                            style="color: rgb(99, 230, 190); font-size: 1.3rem;"></i>Laboratory Services
+                    </li>
+                    <li><i class="fa-solid fa-circle-check"
+                            style="color: rgb(99, 230, 190); font-size: 1.3rem;"></i>Rehabilitation
+                        Services</li>
+                    <li><i class="fa-solid fa-circle-check"
+                            style="color: rgb(99, 230, 190); font-size: 1.3rem;"></i>Home Healthcare</li>
+                    <li><i class="fa-solid fa-circle-check"
+                            style="color: rgb(99, 230, 190); font-size: 1.3rem;"></i>Geriatric Care</li>
                 </ul>
             </div>
         </div>
         <!-- Doctors Intro Section Code -->
-        <div class="Doctors_Intro">
-            <h1>Meet the Healthcare
+        <div class="Doctors_Intro flex flex-col items-center justify-center">
+            <h1 class="text-center p-3 m-2 text-3xl font-normal">Meet the Healthcare <br>
                 Heroes Ready to Serve You</h1>
-            <p>Discover the dedicated professionals behind our exceptional care just for you</p>
-            <div class="doc_Card">
+            <p class="text-center text-gray-500 p-2">Discover the dedicated professionals behind our exceptional care
+                just for you</p>
+            <div class="doc_Card md:grid md:grid-col-2 xl:grid-cols-3 gap-5 p-16">
                 <div class="doc">
-                    <div class="photo">
-                        <button>Available</button>
-                        <img src="./Assets/doc1.png" alt="">
+                    <div class="photo relative">
+                        <button
+                            class="absolute top-4 left-4 py-1 px-2 rounded-2xl bg-green-200 text-green-900">Available</button>
+                        <img src="./Assets/doc1.png" alt=""
+                            class="p-2 border border-gray-300 rounded-xl h-120 w-full  object-cover">
                     </div>
-                    <div class="docIntro">
+                    <div class="docIntro flex items-center justify-between m-3">
                         <div class="info">
-                            <h1>Dr. Harry Marcelo</h1>
-                            <span>Endocrinologist</span>
-                            <p><span>$64</span> / session</p>
+                            <h1 class="text-xl font-semibold ">Dr. Harry Marcelo</h1>
+                            <span class="text-gray-600">Endocrinologist</span>
+                            <p class="text-gray-600"><span class="font-semibold text-xl text-green-700">$64</span> /
+                                session</p>
                         </div>
-                        <button><i class="fa-solid fa-phone"></i> Book Now</button>
+                        <button
+                            class=" px-3 py-2 m-2 border border-green-700 text-green-800 rounded-2xl hover:bg-green-700 hover:text-white hover:scale-110 transition-transform duration-300 ease-in-out"><i
+                                class="fa-solid fa-phone"></i> Book Now</button>
+                    </div>
+                </div>
+                <div class="doc">
+                    <div class="photo relative">
+                        <button
+                            class="absolute top-4 left-4 py-1 px-2 rounded-2xl bg-green-200 text-green-900">Available</button>
+                        <img src="./Assets/doc2.png" alt=""
+                            class="p-2 border border-gray-300 rounded-xl h-120 w-full  object-cover">
+                    </div>
+                    <div class="docIntro flex items-center justify-between m-3">
+                        <div class="info">
+                            <h1 class="text-xl font-semibold ">Dr. Putri Raviola</h1>
+                            <span class="text-gray-600">Cardiologist</span>
+                            <p class="text-gray-600"><span class="font-semibold text-xl text-green-700">$72</span> /
+                                session</p>
+                        </div>
+                        <button
+                            class=" px-3 py-2 m-2 border border-green-700 text-green-800 rounded-2xl hover:bg-green-700 hover:text-white hover:scale-110 transition-transform duration-300 ease-in-out"><i
+                                class="fa-solid fa-phone"></i> Book Now</button>
+                    </div>
+                </div>
+                <div class="doc">
+                    <div class="photo relative">
+                        <button
+                            class="absolute top-4 left-4 py-1 px-2 rounded-2xl bg-green-200 text-green-900">Available</button>
+                        <img src="./Assets/doc3.png" alt=""
+                            class="p-2 border border-gray-300 rounded-xl h-120 w-full  object-cover">
+                    </div>
+                    <div class="docIntro flex items-center justify-between m-3">
+                        <div class="info">
+                            <h1 class="text-xl font-semibold ">Dr. Niky Jeremiah</h1>
+                            <span class="text-gray-600">Dermatologist</span>
+                            <p class="text-gray-600"><span class="font-semibold text-xl text-green-700">$88</span> /
+                                session</p>
+                        </div>
+                        <button
+                            class=" px-3 py-2 m-2 border border-green-700 text-green-800 rounded-2xl hover:bg-green-700 hover:text-white hover:scale-110 transition-transform duration-300 ease-in-out"><i
+                                class="fa-solid fa-phone"></i> Book Now</button>
                     </div>
                 </div>
             </div>
-            <button>See All Doctors</button>
+            <button class="py-2  px-3 bg-gray-200 text-center items-center mx-auto rounded-xl">See All Doctors</button>
         </div>
 
         <!-- Testimonals section code -->
