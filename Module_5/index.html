@@ -7,16 +7,294 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Medi Bridge</title>
 </head>
 
 <body>
     <header>
-        <nav></nav>
+        <nav class="grid grid-cols-3 gap-4 items-center justify-around p-4 my-4">
+            <div class="brading flex items-center justify-center gap-3">
+                <img src="./Assets/Logo.png" alt="">
+                <span class="font-bold">Medi Bridge</span>
+            </div>
+            <menu class="">
+                <ul
+                    class=" md:flex list-none items-center justify-around fixed md:static right-0 top-o h-screen md:h-auto md:w-auto z-50 bg-gray-400 md:bg-white w-[60%] ">
+                    <li><a href="">About Us</a></li>
+                    <li class="flex justify-center items-center">Features<i class="fa-solid fa-angle-down"></i></li>
+
+                    <li><a href="">Find Doctors</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </menu>
+            <div class="login flex items-center justify-center">
+                <button class="mx-2 px-5 py-2 bg-gray-200 border-gray-400 rounded-xl">Log In</button>
+                <button class="mx-2 px-5 py-2 bg-green-800 border-green-800 rounded-xl text-white">Register</button>
+            </div>
+            <button class="hidden"></button>
+        </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+
+        <!-- Hero Section Code -->
+        <div class="hero flex">
+            <div class="content ">
+                <div
+                    class="snapBar flex items-center justify-center gap-2 bg-[rgba(138,195,188,0.15)] border-green-400 rounded-2xl py-4 px-2 m-4 w-50% text-green-800">
+                    <i
+                        class="fa-solid fa-award p-2 rounded-full bg-[rgba(138,195,188,0.40)] text-[rgba(138,195,188)]"></i>
+                    <span>Top-rated healthcare service</span>
+                </div>
+                <h1>Transforming Healthcare for a Better Tomorrow</h1>
+                <p>With a focus on innovation, compassion, and personalized
+                    care, we are committed to guiding you towards a healthier and
+                    more vibrant tomorrow.</p>
+                <button>Get Started</button>
+                <button>Learn More</button>
+            </div>
+            <div class="media">
+                <div class="bgDoc">
+                    <div class="sidDiv">
+                        <img src="./Assets/Avatar.png" alt="">
+                        <div class="miniContent">
+                            <button>Available</button>
+                            <h2>Dr. Andrea G.</h2>
+                            <span>Cardiologist</span>
+                            <span><span>$55</span> / session</span>
+                        </div>
+                    </div>
+                    <div class="bottomDiv">
+                        <div class="textDiv">
+                            <p>“The workshops were insightful, the networking opportunities were abundant”</p>
+                            <div class="spalteDiv">
+                                <div class="intro">
+                                    <h2>Michael Angelo</h2>
+                                    <span>39 years old</span>
+                                </div>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trusted Section Code -->
+        <div class="trusted">
+            <h2>Trusted by</h2>
+            <div class="item flex">
+                <img src="./Assets/Logo1.png" alt="">
+                <img src="./Assets/Logo2.png" alt="">
+                <img src="./Assets/Logo3.png" alt="">
+                <img src="./Assets/Logo4.png" alt="">
+                <img src="./Assets/Logo5.png" alt="">
+            </div>
+        </div>
+
+        <!-- Exprence Section Code -->
+        <div class="exprence">
+            <h1>Experience the Difference
+                in Our Healthcare Approach</h1>
+            <p>Transform your healthcare journey with our innovative and personalized approach</p>
+            <div class="expDiv flex flex-wrap">
+                <div>
+                    <img src="./Assets/Icon1.png" alt="">
+                    <h2>Expert Care</h2>
+                    <p>Our team of experienced healthcare professionals is dedicated to providing the highest quality.
+                    </p>
+                </div>
+                <div>
+                    <img src="./Assets/Icon2.png" alt="">
+                    <h2>Personalized Approach</h2>
+                    <p>We understand that every patient is unique, which is why we tailor our services to meet your
+                        needs.</p>
+                </div>
+                <div>
+                    <img src="./Assets/Icon3.png" alt="">
+                    <h2>Focus on Wellness</h2>
+                    <p>Beyond treating illness, we emphasize preventive care and wellness promotion.</p>
+                </div>
+                <div>
+                    <img src="./Assets/Icon4.png" alt="">
+                    <h2>Community Connection</h2>
+                    <p>We are deeply rooted in the local community and are committed to serving and giving back.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ready Section Code -->
+        <div class="ready">
+            <div class="readyDiv">
+                <div class="snapBar">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Always Ready for You</span>
+                </div>
+                <img src="./Assets/readyDoc.jpg" alt="">
+            </div>
+            <div class="readyContent">
+                <h1>Unveiling a Spectrum
+                    of Specialized Offerings</h1>
+                <p>Discover a tailored approach to your health with our versatile range of specialized services,
+                    ensuring every aspect of your healthcare journey is seamlessly addressed.</p>
+                <ul>
+                    <li><i class="fa-solid fa-circle-check"></i> Diagnostic Imaging</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Mental Health Services</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Laboratory Services</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Rehabilitation Services</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Home Healthcare</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Geriatric Care</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Doctors Intro Section Code -->
+        <div class="Doctors_Intro">
+            <h1>Meet the Healthcare
+                Heroes Ready to Serve You</h1>
+            <p>Discover the dedicated professionals behind our exceptional care just for you</p>
+            <div class="doc_Card">
+                <div class="doc">
+                    <div class="photo">
+                        <button>Available</button>
+                        <img src="./Assets/doc1.png" alt="">
+                    </div>
+                    <div class="docIntro">
+                        <div class="info">
+                            <h1>Dr. Harry Marcelo</h1>
+                            <span>Endocrinologist</span>
+                            <p><span>$64</span> / session</p>
+                        </div>
+                        <button><i class="fa-solid fa-phone"></i> Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <button>See All Doctors</button>
+        </div>
+
+        <!-- Testimonals section code -->
+        <div class="patent_Testimonials">
+            <h1>See What Our
+                Patients Have to Say</h1>
+            <p>Discover firsthand accounts of our patients' experiences</p>
+            <div class="testimonal_Card">
+                <div class="card">
+                    <p>"Medi Bridge has been a true lifesaver for me and my family. When my father fell ill, we turned
+                        to them for help, and they exceeded our expectations in every way."</p>
+                    <div class="patent">
+                        <img src="./Assets/patent1.png" alt="">
+                        <div class="Patent_Info">
+                            <h2>Mecca Rachel</h2>
+                            <span>24 years old</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button>See All Testimonials</button>
+        </div>
+
+        <!-- FAQ Saction Code -->
+        <div class="faq p-6 flex">
+            <div class="info">
+                <h1>Frequently
+                    Asked Questions</h1>
+                <p>Still have something to ask? Contact our sales team</p>
+                <button>Contact Us</button>
+            </div>
+            <div class="schedule">
+                <div class="schedule_header">
+                    <h2>How do I schedule an appointment?</h2>
+                    <p>Scheduling an appointment at Medi Bridge is easy. You can call our office directly or use our
+                        online appointment booking system on our website. Simply select your preferred date and time,
+                        and our staff will confirm your appointment promptly.</p>
+                </div>
+                <details>
+                    <summary>What types of healthcare services does we offer?</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, doloremque aperiam,
+                        rerum, illo nemo ipsa velit corporis voluptatem sapiente obcaecati? Illum laborum tempore
+                        soluta. Deserunt fugit sapiente corporis fugiat?</p>
+                </details>
+                <details>
+                    <summary>Are walk-in appointments available?</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, doloremque aperiam,
+                        rerum, illo nemo ipsa velit corporis voluptatem sapiente obcaecati? Illum laborum tempore
+                        soluta. Deserunt fugit sapiente corporis fugiat?</p>
+                </details>
+                <details>
+                    <summary>Does Medi Bridge accept insurance plans?</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, doloremque aperiam,
+                        rerum, illo nemo ipsa velit corporis voluptatem sapiente obcaecati? Illum laborum tempore
+                        soluta. Deserunt fugit sapiente corporis fugiat?</p>
+                </details>
+                <details>
+                    <summary>What safety measures does Medi Bridge have?</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, doloremque aperiam,
+                        rerum, illo nemo ipsa velit corporis voluptatem sapiente obcaecati? Illum laborum tempore
+                        soluta. Deserunt fugit sapiente corporis fugiat?</p>
+                </details>
+            </div>
+        </div>
+
+        <!-- Appointment Section Code -->
+        <div class="appointemnt">
+            <h1>Discover Comprehensive
+                Care Tailored to Your Needs</h1>
+            <p>Experience personalized healthcare solutions designed to prioritize your well-being</p>
+            <button>Make an Appoinment</button>
+        </div>
+    </main>
+
+    <!-- Footer Section Code -->
+    <footer>
+        <div class="footerLink">
+            <div class="branding">
+                <div class="Branding_logo">
+                    <img src="./Assets/Logo.png" alt="">
+                    <span>Medi Bridge</span>
+                </div>
+                <span>Empowering Health, Inspiring Lives.</span>
+            </div>
+            <div class="Barnding_links">
+
+                <!-- Company List -->
+                <ul>
+                    <h2>Company</h2>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Doctors</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+
+                <!-- Services List -->
+                <ul>
+                    <h2>Services</h2>
+                    <li><a href="">Clinics</a></li>
+                    <li><a href="">Healthcare</a></li>
+                    <li><a href="">Training Center</a></li>
+                    <li><a href="">Online Consultant</a></li>
+                </ul>
+
+                <!-- Social Media List -->
+                <ul>
+                    <h2>Social Media</h2>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footernav flex">
+            <span>© Copyright Medi Bridge 2024</span>
+            <ul class=" flex list-none">
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Terms of Condition</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Changelog</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"

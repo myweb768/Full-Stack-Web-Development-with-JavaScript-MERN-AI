@@ -1,0 +1,17 @@
+menu ul li {
+    display: flex;
+    margin: .4rem;
+    padding: .4rem;
+    text-align: center;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+memu ul li a {
+    text-align: center;
+}
+
+menu ul li:hover {
+    background: white;
+    transform: scale(1.1);
+}
