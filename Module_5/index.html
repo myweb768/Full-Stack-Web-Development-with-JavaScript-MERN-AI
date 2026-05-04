@@ -14,42 +14,28 @@
 
 <body>
     <header>
-        <nav class="grid grid-cols-3 gap-4 items-center justify-around p-4 my-4">
+        <nav class="flex items-center justify-around p-4 my-4">
             <div class="brading flex items-center justify-center gap-3 w-[50%] md:w-auto">
                 <img src="./Assets/Logo.png" alt="">
                 <span class="font-bold">Medi Bridge</span>
             </div>
-            <!-- <menu
-                class="fixed md:static translate-x-full  md:translate-x-0 transition-transform duration-300 ease-in-out w-[60%]">
-                <ul
-                    class="  list-none items-center justify-around   right-0 top-0 h-screen md:h-auto md:w-auto z-50 bg-gray-400 md:bg-transparent w-[60%]  flex  flex-col md:flex-row">
-                    <li><a href="">About Us</a></li>
-                    <li class="flex justify-center items-center">Features<i class="fa-solid fa-angle-down"></i></li>
-
-                    <li><a href="">Find Doctors</a></li>
-                    <li><a href="">Blog</a></li>
-                </ul>
-            </menu> -->
-
-            <!-- মেনু কন্টেইনার -->
-            <menu class="fixed md:static top-0 right-0 h-screen md:h-auto w-[70%] md:w-auto 
+            <menu class="fixed md:static top-0 right-0 h-screen md:h-auto md:w-auto 
              bg-gray-400 md:bg-transparent z-50 
              transform translate-x-full md:translate-x-0 
              transition-transform duration-300 ease-in-out">
-
                 <ul
                     class="flex flex-col md:flex-row list-none items-center justify-around h-full md:h-auto gap-8 md:gap-4">
                     <button class="hidden"><i class="fa-solid fa-angle-right" id="menu_Close"></i></button>
-                    <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+                    <li><a href="#" class="hover:text-blue-600 whitespace-nowrap">About Us</a></li>
                     <li class="flex justify-center items-center cursor-pointer gap-1">
                         Features <i class="fa-solid fa-angle-down text-xs"></i>
                     </li>
-                    <li><a href="#" class="hover:text-blue-600">Find Doctors</a></li>
+                    <li><a href="#" class="hover:text-blue-600 whitespace-nowrap">Find Doctors</a></li>
                     <li><a href="#" class="hover:text-blue-600">Blog</a></li>
                 </ul>
             </menu>
             <div class="login flex items-center justify-center w-[50%] md:w-auto">
-                <button class="mx-2 px-5 py-2 bg-gray-200 border-gray-400 rounded-xl ">Log In</button>
+                <button class="mx-2 px-5 py-2 bg-gray-200 border-gray-400 rounded-xl whitespace-nowrap">Log In</button>
                 <button class="mx-2 px-5 py-2 bg-green-800 border-green-800 rounded-xl text-white">Register</button>
             </div>
 
@@ -113,7 +99,7 @@
         <!-- Trusted Section Code -->
         <div class="trusted p-6 my-14">
             <h2 class="text-gray-300 font-normal text-center text-2xl">Trusted by</h2>
-            <div class="items_Img flex items-center justify-center gap-4">
+            <div class="items_Img flex flex-wrap items-center justify-center gap-4">
                 <img src="./Assets/Logo1.png" alt="">
                 <img src="./Assets/Logo2.png" alt="">
                 <img src="./Assets/Logo3.png" alt="">
@@ -128,7 +114,7 @@
                 in Our Healthcare Approach</h1>
             <p class="text-center text-gray-500 m-2">Transform your healthcare journey with our innovative and
                 personalized approach</p>
-            <div class="expDiv  md:grid md:grid-cols-4 gap-5 p-2 m-2 ">
+            <div class="expDiv  md:grid md:grid-cols-2 xl:grid-cols-4 gap-5 p-2 m-2 ">
                 <div>
                     <img src="./Assets/Icon1.png" alt="">
                     <h2>Expert Care</h2>
@@ -155,7 +141,7 @@
         </div>
 
         <!-- Ready Section Code -->
-        <div class="ready md:grid grid-cols-2 gap-2">
+        <div class="ready xl:grid grid-cols-2 gap-2">
             <div class="readyDiv relative p-9 ">
                 <div
                     class="snapBar absolute top-8 left-8 gap-2 bg-[rgba(138,195,188,0.15)] border-green-400 rounded-3xl py-2 px-2 m-4 font-semibold text-[.8rem] text-green-900 ">
@@ -196,7 +182,7 @@
                 Heroes Ready to Serve You</h1>
             <p class="text-center text-gray-500 p-2">Discover the dedicated professionals behind our exceptional care
                 just for you</p>
-            <div class="doc_Card md:grid md:grid-col-2 xl:grid-cols-3 gap-5 p-16">
+            <div class="doc_Card grid md:grid-cols-2 xl:grid-cols-3 gap-5 p-16">
                 <div class="doc">
                     <div class="photo relative">
                         <button
@@ -255,94 +241,145 @@
                     </div>
                 </div>
             </div>
-            <button class="py-2  px-3 bg-gray-200 text-center items-center mx-auto rounded-xl">See All Doctors</button>
+            <button
+                class="py-2 px-3 my-3 bg-gray-200 border border-gray-300 rounded-[.4rem] text-[1rem] font-semibold  hover:scale-110 hover:bg-transparent transition-all duration-300 ease-in-out">See
+                All Doctors</button>
         </div>
 
         <!-- Testimonals section code -->
-        <div class="patent_Testimonials">
-            <h1>See What Our
+        <div class=" patent_Testimonials p-16 m-2 flex flex-col items-center justify-center">
+            <h1 class="text-2xl text-center">See What Our <br>
                 Patients Have to Say</h1>
-            <p>Discover firsthand accounts of our patients' experiences</p>
-            <div class="testimonal_Card">
-                <div class="card">
-                    <p>"Medi Bridge has been a true lifesaver for me and my family. When my father fell ill, we turned
+            <p class="text-center text-gray-500 my-6">Discover firsthand accounts of our patients' experiences</p>
+            <div class="testimonal_Card md:grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+                <div class="card neumorphism  p-3 my-3 h-95">
+                    <p class="p-3 m-2 text-justify  mb-30">"Medi Bridge has been a true lifesaver for me and my
+                        family.
+                        When my father fell ill, we turned
                         to them for help, and they exceeded our expectations in every way."</p>
-                    <div class="patent">
-                        <img src="./Assets/patent1.png" alt="">
+                    <div class="patent flex items-center justify-between ">
+                        <img src="./Assets/patent1.png" alt="" class="h-10 w-10 rounded-full object-cover">
                         <div class="Patent_Info">
-                            <h2>Mecca Rachel</h2>
-                            <span>24 years old</span>
+                            <h2 class="font-semibold text[1rem]">Mecca Rachel</h2>
+                            <span class="text-gray-600">24 years old</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card neumorphism  p-3 my-3 h-95">
+                    <iframe class="rounded-2xl cover" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/Bv-J4XSRLx4?si=J6q_RXvQVCot98iv" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="card neumorphism  p-3 my-3 h-95">
+                    <p class="p-3 m-2 text-justify  mb-30">"I've been a patient at Medi Bridge for years, and they
+                        consistently deliver outstanding care. Their dedication to patient well-being is evident in
+                        every interaction."</p>
+                    <div class="patent flex items-center justify-between ">
+                        <img src="./Assets/patent2.png" alt="" class="h-10 w-10 rounded-full object-cover">
+                        <div class="Patent_Info">
+                            <h2 class="font-semibold text[1rem]">Adam ackson</h2>
+                            <span class="text-gray-600">27 years old</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button>See All Testimonials</button>
+            <button
+                class="py-2 px-3 my-3 bg-gray-200 border border-gray-300 rounded-[.4rem] text-[1rem] font-semibold  hover:scale-110 hover:bg-transparent transition-all duration-300 ease-in-out">See
+                All
+                Testimonials</button>
         </div>
 
         <!-- FAQ Saction Code -->
-        <div class="faq p-6 flex">
-            <div class="info">
-                <h1>Frequently
+        <div class="faq p-6 md:grid md:grid-cols-2">
+            <div class="info px-10">
+                <h1 class="text-3xl font-semibold">Frequently <br>
                     Asked Questions</h1>
-                <p>Still have something to ask? Contact our sales team</p>
-                <button>Contact Us</button>
+                <p class="text-gray-600 ">Still have something to ask? Contact our sales team</p>
+                <button
+                    class="py-2 px-3 my-3 bg-gray-200 border border-gray-300 rounded-[.4rem] text-[1rem] font-semibold  hover:scale-110 hover:bg-transparent transition-all duration-300 ease-in-out">Contact
+                    Us</button>
             </div>
-            <div class="schedule">
-                <div class="schedule_header">
-                    <h2>How do I schedule an appointment?</h2>
-                    <p>Scheduling an appointment at Medi Bridge is easy. You can call our office directly or use our
-                        online appointment booking system on our website. Simply select your preferred date and time,
+            <div class=" schedule">
+                <div class="schedule_header rounded-xl">
+                    <h2 class="bg-green-900 text-white font-semibold px-2 h-20 rounded-t-xl flex items-center text-2xl">
+                        How do I
+                        schedule an
+                        appointment?</h2>
+                    <p class="flex items-center h-36 mb-4 text-gray-600 px-2 border border-gray-400 rounded-b-xl">
+                        Scheduling
+                        an appointment at Medi
+                        Bridge is easy. You can call our
+                        office
+                        directly or use our
+                        online appointment booking system on our website. Simply select your preferred date and
+                        time,
                         and our staff will confirm your appointment promptly.</p>
                 </div>
-                <details>
-                    <summary>What types of healthcare services does we offer?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, doloremque aperiam,
-                        rerum, illo nemo ipsa velit corporis voluptatem sapiente obcaecati? Illum laborum tempore
-                        soluta. Deserunt fugit sapiente corporis fugiat?</p>
-                </details>
-                <details>
-                    <summary>Are walk-in appointments available?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, doloremque aperiam,
-                        rerum, illo nemo ipsa velit corporis voluptatem sapiente obcaecati? Illum laborum tempore
-                        soluta. Deserunt fugit sapiente corporis fugiat?</p>
-                </details>
-                <details>
-                    <summary>Does Medi Bridge accept insurance plans?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, doloremque aperiam,
-                        rerum, illo nemo ipsa velit corporis voluptatem sapiente obcaecati? Illum laborum tempore
-                        soluta. Deserunt fugit sapiente corporis fugiat?</p>
-                </details>
-                <details>
-                    <summary>What safety measures does Medi Bridge have?</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, doloremque aperiam,
-                        rerum, illo nemo ipsa velit corporis voluptatem sapiente obcaecati? Illum laborum tempore
-                        soluta. Deserunt fugit sapiente corporis fugiat?</p>
-                </details>
+
+                <div>
+                    <details class="grid grid-cols-1">
+                        <summary>What types of healthcare services does we offer?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, doloremque
+                            aperiam,
+                            rerum, illo nemo ipsa velit corporis voluptatem sapiente obcaecati? Illum laborum tempore
+                            soluta. Deserunt fugit sapiente corporis fugiat?</p>
+                    </details>
+                    <details>
+                        <summary>Are walk-in appointments available?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, doloremque
+                            aperiam,
+                            rerum, illo nemo ipsa velit corporis voluptatem sapiente obcaecati? Illum laborum tempore
+                            soluta. Deserunt fugit sapiente corporis fugiat?</p>
+                    </details>
+                    <details>
+                        <summary>Does Medi Bridge accept insurance plans?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, doloremque
+                            aperiam,
+                            rerum, illo nemo ipsa velit corporis voluptatem sapiente obcaecati? Illum laborum tempore
+                            soluta. Deserunt fugit sapiente corporis fugiat?</p>
+                    </details>
+                    <details>
+                        <summary>What safety measures does Medi Bridge have?</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas adipisci, doloremque
+                            aperiam,
+                            rerum, illo nemo ipsa velit corporis voluptatem sapiente obcaecati? Illum laborum tempore
+                            soluta. Deserunt fugit sapiente corporis fugiat?</p>
+                    </details>
+                </div>
             </div>
         </div>
 
         <!-- Appointment Section Code -->
-        <div class="appointemnt">
-            <h1>Discover Comprehensive
+        <div
+            class="appointemnt bg-[#34978B] flex flex-col items-center justify-center rounded-2xl p-16 m-16 h-[60vh] text-white">
+            <h1 class="text-3xl font-semibold m-3">Discover Comprehensive <br>
                 Care Tailored to Your Needs</h1>
-            <p>Experience personalized healthcare solutions designed to prioritize your well-being</p>
-            <button>Make an Appoinment</button>
+            <p class="text-gray-200 
+            ">Experience personalized healthcare solutions designed to prioritize your well-being</p>
+            <button
+                class="py-2 px-3 my-3 bg-gray-200 border border-gray-300 rounded-[.4rem] text-[1rem] font-semibold  text-black hover:text-white hover:scale-110 hover:bg-transparent transition-all duration-300 ease-in-out w-fit">Make
+                an Appoinment</button>
         </div>
     </main>
 
     <!-- Footer Section Code -->
     <footer>
-        <div class="footerLink">
+        <div class="footerLink md:grid md:grid-cols-2 gap-4 p-16">
             <div class="branding">
-                <div class="Branding_logo">
+                <div class="Branding_logo flex  items-center">
                     <img src="./Assets/Logo.png" alt="">
-                    <span>Medi Bridge</span>
+                    <span class="font-semibold">Medi Bridge</span>
                 </div>
                 <span>Empowering Health, Inspiring Lives.</span>
             </div>
-            <div class="Barnding_links">
 
+
+            <div class="Barnding_links md:grid md:grid-cols-3 gap-4 items-center justify-center">
                 <!-- Company List -->
                 <ul>
                     <h2>Company</h2>
@@ -371,9 +408,9 @@
                 </ul>
             </div>
         </div>
-        <div class="footernav flex">
-            <span>© Copyright Medi Bridge 2024</span>
-            <ul class=" flex list-none">
+        <div class="footernav flex item justify-center p-8">
+            <span>© Copyright Medi Bridge 2024. </span>
+            <ul class=" flex list-none gap-4">
                 <li><a href="">FAQ</a></li>
                 <li><a href="">Terms of Condition</a></li>
                 <li><a href="">Privacy Policy</a></li>
