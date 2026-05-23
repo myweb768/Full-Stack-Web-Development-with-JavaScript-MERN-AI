@@ -5,17 +5,12 @@ Create variables to store:
  Print all values in the console.
 */
 console.log("Task 1: Student Information ");
-let student = {
-    Name: "Hasan",
-    Age: 19,
-    Course_Name: "MERN Stack Development (JS) with AI",
-    Is_Enrolled: true,
-}
 
+let Name = "Hasan";
+let Age = 19;
+let Course_Name = "MERN Stack Development (JS) with AI";
+let is_Enrolled = "true";
 
-for(let key in student){
-    console.log(key+":"+student[key])
-}
 // console.log(student)
 
 console.log("\n............................")
