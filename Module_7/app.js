@@ -11,8 +11,7 @@ let Age = 19;
 let Course_Name = "MERN Stack Development (JS) with AI";
 let is_Enrolled = "true";
 
-// console.log(student)
-
+console.log(Name, Age, Course_Name, is_Enrolled);
 console.log("\n............................")
 
 /*
