@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Theory Part</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #242424;
+        }
+        header, footer{
+            background-color: aqua;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        header span{
+            color: gray;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .topic{
+            padding: 2rem;
+            width: 80%;
+            margin: 2rem auto;
+            border: 2px solid gray;
+            border-radius: .3rem;
+            background: #000;
+            color: rgb(209, 209, 209);
+        }
+        .topic h1{
+            text-align: center;
+            margin: .5rem;
+            color: white;
+        }
+        .qa{
+            margin: .4rem auto;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Theory Part of Assignment </h2>
+        <span>Module 12 </span>
+    </header>
+    <main>
+        <div class="topic">
+            <h1>V8 Engine</h1>
+            <div class="qa">
+            <b>Q. What is the V8 Engine?</b>
+            <p><b>Ans.</b> V8 is Google's open-source, ultra-fast JavaScript and WebAssembly engine. It is written in C++ and serves as the core execution layer inside Google Chrome and Node.js runtime environments.</p>
+            </div>
+             <div class="qa">
+            <b>Q. Why is the V8 Engine important for Node.js?</b>
+            <p><b>Ans.</b> Without V8, Node.js wouldn't exist as we know it. V8 acts as the heavy-lifting runtime engine that allows developers to run standard JavaScript code natively on physical servers and computers rather than keeping it sandboxed inside a browser window.</p>
+            </div>
+            <div class="qa">
+            <b>Q. What is the main responsibility of the V8 Engine?</b>
+            <p><b>Ans.</b> Its main job is to take human-readable JavaScript code and instantly compile it into raw, native machine code that a computer's CPU can execute. It achieves this blazing speed via Just-In-Time (JIT) compilation.</p>
+            </div>
+        </div>
+
+         <div class="topic">
+            <h1>Execution</h1>
+            <div class="qa">
+            <b>Q. What is the difference between Synchronous and Asynchronous execution?</b>
+            <p><b>Ans.</b> Synchronous means code runs sequentially, line-by-line. If one operation takes 10 seconds, the whole system freezes and waits for it to finish. Asynchronous means a time-consuming task is handed off to the system background, allowing the remaining code to keep executing immediately without pausing the main thread.</p>
+            </div>
+            <div class="qa">
+            <b>Q. What is the Call Stack?</b>
+            <p><b>Ans.</b> The Call Stack is a data structure used by the JavaScript engine to keep track of function execution order. It works on a LIFO (Last-In, First-Out) mechanism. When a function is called, it gets pushed onto the top of the stack. When it finishes running, it gets popped off the stack.</p>
+            </div>
+        </div>
+<!-- ---------------- -->
+        <div class="topic">
+            <h1>Event Loop</h1>
+            <div class="qa">
+            <b>Q. What is the Event Loop?</b>
+            <p><b>Ans.</b> The Event Loop is a continuous loop mechanism that constantly monitors the Call Stack and the Callback Queue (where completed asynchronous tasks wait).</p>
+            </div>
+            <div class="qa">
+            <b>Q. Why is the Event Loop needed in Node.js?</b>
+            <p><b>Ans.</b> Because JavaScript is strictly single-threaded (it only has one Call Stack and can only do one thing at a time). The Event Loop is required to orchestrate tasks so that heavy asynchronous background actions don't completely lock up the single main thread.</p>
+            </div>
+             <div class="qa">
+            <b>Q. How does the Event Loop help execute asynchronous code?</b>
+            <p><b>Ans.</b> When an asynchronous background task (like a timer or file fetch) completes, its corresponding callback is placed into the Callback Queue. The Event Loop constantly waits until the main Call Stack becomes completely empty. The moment it detects an empty stack, it safely moves the first callback from the queue up into the stack to be executed.</p>
+            </div>
+        </div>
+
+                <div class="topic">
+            <h1>libuv</h1>
+            <div class="qa">
+            <b>Q.What is libuv?</b>
+            <p><b>Ans.</b> libuv is an open-source C library that was specially written to give Node.js cross-platform access to the host computer's operating system capabilities.</p>
+            </div>
+            <div class="qa">
+            <b>Q. What types of tasks are handled by libuv?</b>
+            <p><b>Ans.</b> libuv implements the underlying mechanism of the Event Loop and controls Node.js's internal Thread Pool. It handles heavy system-level asynchronous tasks such as File System I/O operations (fs), Network sockets/requests, and resource-heavy cryptography/compression utilities.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+          <h2>Finish The Theory Part of Assignment </h2>
+        <span>Module 12 </span>
+    </footer>
+</body>
+</html>
