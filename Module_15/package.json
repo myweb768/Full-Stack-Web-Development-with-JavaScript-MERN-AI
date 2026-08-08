@@ -1,0 +1,21 @@
+{
+  "name": "module_15",
+  "version": "1.0.0",
+  "description": " Short Description: এই প্রজেক্টের মাধ্যমে তোমরা শিখবে কীভাবে JWT Authentication, HTTP Only Cookie, এবং Redis ব্যবহার করে User Session তৈরি করতে হয় এবং Redis-এ Temporary Notes সংরক্ষণ করতে হয়।",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "redis": "^6.2.0"
+  }
+}
