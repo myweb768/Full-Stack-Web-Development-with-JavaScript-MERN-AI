@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.5.0"
+  },
+  "name": "module_16",
+  "version": "1.0.0",
+  "description": "--- # Objective **Practice basic MongoDB queries using MongoDB Compass or MongoDB Atlas. Complete the following tasks using a collection named students.**",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "db":"node queries/queries.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
