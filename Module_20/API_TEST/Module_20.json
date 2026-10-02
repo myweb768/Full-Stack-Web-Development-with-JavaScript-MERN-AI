@@ -1,0 +1,354 @@
+{
+  "info": {
+    "name": "Module_20",
+    "description": null,
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Register-user-POST",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "description": "",
+            "url": {
+              "raw": "{{PATH}}register",
+              "protocol": "",
+              "host": [
+                "{{PATH}}register"
+              ],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "/*{\n  \"name\": \"Rakib\",\n  \"email\": \"rakib@test.com\",\n  \"password\": \"123456\",\n  \"phoneNumber\": \"01700000000\"\n}\n*/\n\n{\n  \"name\": \"Arham\",\n  \"email\": \"arham@test.com\",\n  \"password\": \"123678\",\n  \"phoneNumber\": \"01800000000\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "User-Update-PUT",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "description": "",
+            "url": {
+              "raw": "{{PATH}}profile",
+              "protocol": "",
+              "host": [
+                "{{PATH}}profile"
+              ],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\":\"Arham Hassan\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "User-login-POST",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "description": "",
+            "url": {
+              "raw": "{{PATH}}login",
+              "protocol": "",
+              "host": [
+                "{{PATH}}login"
+              ],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "/*\n{\n  \"email\": \"arham@test.com\",\n  \"password\": \"123678\"\n}\n*/ \n{\n  \"email\": \"rakib@test.com\",\n  \"password\": \"123456\"\n}\n \n\n//Wrong Data\n/*\n{\n  \"email\": \"arham@test.com\",\n  \"password\": \"123578\"\n}\n*/",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "User-logout-POST",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "description": "",
+            "url": {
+              "raw": "{{PATH}}logout",
+              "protocol": "",
+              "host": [
+                "{{PATH}}logout"
+              ],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "User-progile-GET",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "description": "",
+            "url": {
+              "raw": "{{PATH}}profile",
+              "protocol": "",
+              "host": [
+                "{{PATH}}profile"
+              ],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "item": [
+        {
+          "name": "Blog-create-POST",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "description": "",
+            "url": {
+              "raw": "{{PATH}}blogs",
+              "protocol": "",
+              "host": [
+                "{{PATH}}blogs"
+              ],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "/*{\n  \"title\": \"Getting Started with Node.js\",\n  \"content\": \"Node.js is a JavaScript runtime built on Chrome's V8 engine. It lets you run JavaScript on the server and build fast, scalable network applications.\",\n  \"authorName\": \"Rakib\",\n  \"tags\": \"nodejs,backend,javascript\"\n}\n\n\n{\n  \"title\": \"Understanding MongoDB with Mongoose\",\n  \"content\": \"Mongoose is an ODM library for MongoDB and Node.js. It provides schema validation, middleware, and query helpers that make working with MongoDB much easier.\",\n  \"authorName\": \"Rakib\",\n  \"tags\": \"mongodb,mongoose,database\"\n}\n\n\n{\n  \"title\": \"Understanding Redis with Mongoose\",\n  \"content\": \"Redis (REmote DIctionary Server) is an open-source, in-memory data structure store used primarily as a database, cache, message broker, and streaming engine.  It stores all data in RAM rather than on disk, enabling sub-millisecond latency and extremely high throughput (often exceeding 100,000 operations per second\",\n  \"authorName\": \"Rakib\",\n  \"tags\": \"redis,redis,cookieDB\"\n}\n*/\n\n{\n  \"title\": \"Understanding Debs with Mongoose\",\n  \"content\": \"Redis (REmote DIctionary Server) is an open-source, in-memory data structure store used primarily as a database, cache, gdho broker, and streaming engine.  It stores all data in RAM rather than on disk, enabling sub-millisecond latency and extremely high throughput (often exceeding 100,000 operations per second\",\n  \"authorName\": \"Rakib\",\n  \"tags\": \"redis,kedis,cookieDB\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Blog-Get-GET",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "description": "",
+            "url": {
+              "raw": "{{PATH}}blogs",
+              "protocol": "",
+              "host": [
+                "{{PATH}}blogs"
+              ],
+              "path": [],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Blog-GetSingle-GET",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "description": "",
+            "url": {
+              "raw": "{{PATH}}blogs/6abfa4b3af28b70e76caedea",
+              "protocol": "",
+              "host": [
+                "{{PATH}}blogs"
+              ],
+              "path": [
+                "6abfa4b3af28b70e76caedea"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Blog-update-PUT",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "description": "",
+            "url": {
+              "raw": "{{PATH}}blogs/6abfa435af28b70e76caede9",
+              "protocol": "",
+              "host": [
+                "{{PATH}}blogs"
+              ],
+              "path": [
+                "6abfa435af28b70e76caede9"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n   \"authorName\": \"Arham\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Blog-remove-DELETE",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "description": "",
+            "url": {
+              "raw": "{{PATH}}blogs/6abfb073af28b70e76caeded",
+              "protocol": "",
+              "host": [
+                "{{PATH}}blogs"
+              ],
+              "path": [
+                "6abfb073af28b70e76caeded"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Uploads",
+      "item": [
+        {
+          "name": "Images-upload-POST",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "description": "",
+            "url": {
+              "raw": "{{PATH}}blogs",
+              "protocol": "",
+              "host": [
+                "{{PATH}}blogs"
+              ],
+              "path": [],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "disabled": false,
+                  "type": "text",
+                  "description": "",
+                  "value": "What is Nginx and Why Use It?"
+                },
+                {
+                  "key": "content",
+                  "disabled": false,
+                  "type": "text",
+                  "description": "",
+                  "value": "Nginx is a high-performance web server that is also widely used as a reverse proxy, load balancer, and HTTP cache. It sits in front of your application, receives client requests, and forwards them to the backend. This improves security, speed, and scalability."
+                },
+                {
+                  "key": "authorName",
+                  "disabled": false,
+                  "type": "text",
+                  "description": "",
+                  "value": "\tRakib"
+                },
+                {
+                  "key": "tags",
+                  "disabled": false,
+                  "type": "text",
+                  "description": "",
+                  "value": "nginx,webserver,devops"
+                },
+                {
+                  "key": "blogImage",
+                  "disabled": false,
+                  "type": "file",
+                  "description": "",
+                  "src": "/media/hidden/Extra Stroge/Tuturial/MERN Stack Development (JS) with AI (Ostad Primium)/Full-Stack-Web-Development-with-JavaScript-MERN-AI/Module_20/nginx.png",
+                  "contentType": "image/png"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Images-upload-PUT",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "description": "",
+            "url": {
+              "raw": "{{PATH}}blogs/6abfb073af28b70e76caeded",
+              "protocol": "",
+              "host": [
+                "{{PATH}}blogs"
+              ],
+              "path": [
+                "6abfb073af28b70e76caeded"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "blogImage",
+                  "disabled": false,
+                  "type": "file",
+                  "description": "",
+                  "src": "/media/hidden/Extra Stroge/Tuturial/MERN Stack Development (JS) with AI (Ostad Primium)/Full-Stack-Web-Development-with-JavaScript-MERN-AI/Module_20/nginx_thumb.png",
+                  "contentType": "image/png"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "PATH",
+      "value": "http://localhost:5000/api/v1/",
+      "type": "default"
+    }
+  ]
+}
