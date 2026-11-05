@@ -1,4 +1,37 @@
-# সংক্ষিপ্ত বিবরণ
+
+# User Management App
+
+React দিয়ে তৈরি একটি simple User Management App।
+
+## 🔗 Live Demo
+
+**https://usermenagement.vercel.app/**
+
+## Features
+
+- JSONPlaceholder API থেকে users fetch (`useEffect`)
+- Loading state দেখানো
+- Details button দিয়ে user-এর বিস্তারিত তথ্য (modal)
+- Favourite add/remove করা
+- Zustand দিয়ে favourites state management
+- Local Storage-এ favourites save (refresh করলেও থাকে)
+- Navbar-এ Total Users ও Favourites count
+- Mobile ও Desktop responsive UI
+
+## Tech Stack
+
+React (Vite), Zustand, Tailwind CSS, Local Storage
+
+## Run locally
+
+\`\`\`bash
+npm install
+npm run dev
+\`\`\`
+
+---
+
+# 📋 Assignment Description
 
 `Topics: React, useEffect, API Calling, Zustand, Local Storage`
 
